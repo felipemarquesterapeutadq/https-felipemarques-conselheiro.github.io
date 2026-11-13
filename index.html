@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Felipe Marques Conselheiro</title>
+<meta name="description" content="Felipe Marques, Conselheiro em Dependência Química. Conteúdos sobre dependência química e emocional, e o livro Para Além do Vício.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --creme:#F6F0E2; --creme-2:#EFE6D1; --dourado:#B08A34; --dourado-2:#8E6E25;
+  --verde:#1F3D2B; --verde-2:#2E5640; --rosa:#D77A8E; --rosa-2:#ECA9B6;
+  --texto:#1F3D2B; --suave:#5B6B5F; --branco:#FFFDF8;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--creme);color:var(--texto);font-family:Poppins,system-ui,sans-serif;font-weight:300;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:Lora,Georgia,serif;font-weight:700;line-height:1.15;color:var(--verde)}
+.ouro{color:var(--dourado)}
+.divisor{width:72px;height:3px;background:var(--dourado);border-radius:2px;margin:18px auto}
+.eyebrow{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dourado);font-weight:500}
+
+/* topo */
+header{position:sticky;top:0;z-index:10;background:rgba(246,240,226,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(176,138,52,.35)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.marca{display:flex;align-items:center;gap:10px;text-decoration:none}
+.marca svg{width:34px;height:auto}
+.marca b{font-family:Lora,serif;font-size:1.1rem;color:var(--verde)}
+.menu{display:flex;gap:22px;font-size:.9rem;font-weight:400}
+.menu a{text-decoration:none;color:var(--verde)}
+.menu a:hover{color:var(--dourado)}
+@media(max-width:720px){.menu{display:none}}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 26px;border-radius:999px;font-weight:500;font-size:.95rem;text-decoration:none;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-verde{background:var(--verde);color:var(--creme)}
+.btn-verde:hover{background:var(--verde-2)}
+.btn-ouro{background:var(--dourado);color:var(--branco)}
+.btn-ouro:hover{background:var(--dourado-2)}
+.btn-linha{border:1.5px solid var(--dourado);color:var(--verde)}
+
+/* hero */
+.hero{padding:72px 0 64px;text-align:center}
+.moldura{border:3px solid var(--dourado);outline:1px solid var(--dourado);outline-offset:-12px;padding:56px 28px;background:var(--creme)}
+.hero .lotus{width:110px;margin:0 auto 22px;display:block}
+.hero h1{font-size:clamp(2.2rem,6vw,3.8rem)}
+.hero p.lead{max-width:620px;margin:0 auto 30px;font-size:1.08rem;color:var(--suave)}
+.hero .acoes{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.selos{margin-top:28px;font-size:.82rem;color:var(--dourado);font-weight:500}
+
+/* seções */
+section{padding:72px 0}
+.titulo-sec{text-align:center;margin-bottom:40px}
+.titulo-sec h2{font-size:clamp(1.8rem,4.5vw,2.6rem)}
+.titulo-sec p{max-width:600px;margin:0 auto;color:var(--suave)}
+
+/* livro */
+.livro{background:var(--verde);color:var(--creme)}
+.livro h2,.livro h3{color:var(--creme)}
+.livro-grid{display:grid;grid-template-columns:300px 1fr;gap:56px;align-items:center}
+@media(max-width:760px){.livro-grid{grid-template-columns:1fr;gap:36px;text-align:center}}
+.capa{aspect-ratio:2/3;max-width:280px;margin:0 auto;border-radius:4px 10px 10px 4px;background:linear-gradient(135deg,#9E2430,#6E1520);box-shadow:-10px 0 0 #5A1019 inset, 18px 24px 40px rgba(0,0,0,.35);display:flex;flex-direction:column;justify-content:space-between;padding:34px 26px 26px;color:#FBEFE1;text-align:center}
+.capa .t{font-family:Lora,serif;font-weight:700;font-size:2rem;line-height:1.05}
+.capa .s{font-size:.78rem;opacity:.85;margin-top:12px;font-style:italic;font-family:Lora,serif}
+.capa .a{font-size:.85rem;letter-spacing:.2em;text-transform:uppercase}
+.livro .eyebrow{color:var(--rosa-2)}
+.livro h2{font-size:clamp(2rem,5vw,2.8rem);margin:8px 0 6px}
+.livro .sub{font-family:Lora,serif;font-style:italic;color:var(--dourado);font-size:1.15rem;margin-bottom:18px}
+.livro p{opacity:.9;margin-bottom:14px}
+.livro ul{list-style:none;margin:18px 0 28px}
+.livro li{padding-left:26px;position:relative;margin-bottom:8px}
+.livro li::before{content:"";position:absolute;left:0;top:.62em;width:12px;height:2px;background:var(--dourado)}
+@media(max-width:760px){.livro ul{text-align:left;display:inline-block}}
+.livro .acoes{display:flex;gap:12px;flex-wrap:wrap}
+@media(max-width:760px){.livro .acoes{justify-content:center}}
+.livro .btn-linha{color:var(--creme)}
+
+/* conteúdos */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:var(--branco);border:1px solid rgba(176,138,52,.4);border-radius:14px;padding:26px 22px;text-decoration:none;transition:transform .15s,box-shadow .15s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(31,61,43,.12)}
+.card .tag{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dourado);font-weight:600}
+.card h3{font-size:1.25rem;margin:10px 0 8px}
+.card p{font-size:.92rem;color:var(--suave);flex:1}
+.card .ver{margin-top:14px;font-size:.85rem;font-weight:500;color:var(--verde)}
+.centro{text-align:center;margin-top:34px}
+
+/* sobre */
+.sobre{background:var(--creme-2)}
+.sobre-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+@media(max-width:760px){.sobre-grid{grid-template-columns:1fr}}
+.sobre h2{font-size:clamp(1.8rem,4.5vw,2.4rem);margin-bottom:16px}
+.sobre p{margin-bottom:14px;color:var(--suave)}
+.creds{list-style:none;border-left:3px solid var(--dourado);padding-left:22px}
+.creds li{margin-bottom:14px}
+.creds b{display:block;font-weight:500;color:var(--verde)}
+.creds span{font-size:.88rem;color:var(--suave)}
+
+/* serviços */
+.servicos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.serv{border-top:3px solid var(--dourado);background:var(--branco);padding:24px 22px;border-radius:0 0 12px 12px}
+.serv h3{font-size:1.15rem;margin-bottom:8px}
+.serv p{font-size:.92rem;color:var(--suave)}
+.idiomas{text-align:center;margin-top:26px;font-size:.9rem;color:var(--dourado);font-weight:500}
+
+/* contato */
+.contato{text-align:center}
+.contato .moldura{padding:52px 24px}
+.contato h2{font-size:clamp(2rem,5vw,2.8rem)}
+.contato p{max-width:560px;margin:0 auto 26px;color:var(--suave)}
+.contato .acoes{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{border-top:1px solid var(--dourado);padding:30px 0 40px;text-align:center}
+footer b{font-family:Lora,serif;font-size:1.15rem;color:var(--verde);display:block}
+footer span{font-size:.85rem;color:var(--dourado)}
+footer small{display:block;margin-top:12px;font-size:.75rem;color:var(--suave)}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="lotus" viewBox="0 0 120 70">
+      <path d="M60 4 C70 18 72 36 60 56 C48 36 50 18 60 4Z" fill="#D77A8E"/>
+      <path d="M60 56 C52 40 40 28 22 22 C24 40 38 54 60 56Z" fill="#D77A8E" opacity=".9"/>
+      <path d="M60 56 C68 40 80 28 98 22 C96 40 82 54 60 56Z" fill="#D77A8E" opacity=".9"/>
+      <path d="M60 56 C46 50 30 46 8 48 C20 56 40 60 60 56Z" fill="#ECA9B6"/>
+      <path d="M60 56 C74 50 90 46 112 48 C100 56 80 60 60 56Z" fill="#ECA9B6"/>
+      <path d="M22 62 Q60 72 98 62" stroke="#B08A34" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header>
+  <div class="wrap nav">
+    <a href="#inicio" class="marca"><svg viewBox="0 0 120 70"><use href="#lotus"/></svg><b>Felipe Marques</b></a>
+    <nav class="menu">
+      <a href="#livro">O livro</a>
+      <a href="#conteudos">Conteúdos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <div class="wrap hero">
+    <div class="moldura">
+      <svg class="lotus" viewBox="0 0 120 70"><use href="#lotus"/></svg>
+      <p class="eyebrow">Conselheiro em Dependência Química</p>
+      <h1>Existe vida<br><span class="ouro">para além do vício</span></h1>
+      <div class="divisor"></div>
+      <p class="lead">Conteúdos sobre dependência química e emocional, codependência e traumas, para quem quer sair do ciclo e recomeçar. Sem julgamento, com acolhimento.</p>
+      <div class="acoes">
+        <a class="btn btn-verde" href="#livro">Conheça o livro</a>
+        <a class="btn btn-linha" href="https://www.instagram.com/felipemarques.conselheiro" target="_blank" rel="noopener">Siga no Instagram</a>
+      </div>
+      <p class="selos">CRT-HB 6045/26 · Atendimento presencial e online · Brasil e exterior</p>
+    </div>
+  </div>
+
+  <section id="livro" class="livro">
+    <div class="wrap livro-grid">
+      <div class="capa" aria-label="Capa do livro Para Além do Vício">
+        <div><div class="t">Para Além do Vício</div><div class="s">Reflexões para quem quer sair do ciclo e recomeçar</div></div>
+        <div class="a">Felipe Marx</div>
+      </div>
+      <div>
+        <p class="eyebrow">Lançamento</p>
+        <h2>Para Além do Vício</h2>
+        <p class="sub">Reflexões para quem quer sair do ciclo e recomeçar</p>
+        <p>Um livro que nasce da experiência pessoal e do trabalho com quem vive a dependência de perto. Para quem está no ciclo, para quem ama alguém que está, e para quem já saiu e quer se manter de pé.</p>
+        <ul>
+          <li>O que está por trás da busca constante por alívio</li>
+          <li>Padrões que se repetem nos relacionamentos</li>
+          <li>Caminhos práticos para recomeçar, um dia de cada vez</li>
+        </ul>
+        <div class="acoes">
+          <a class="btn btn-ouro" href="https://www.amazon.com.br/dp/B0HNMFB5S3" target="_blank" rel="noopener">E-book na Amazon</a>
+          <a class="btn btn-linha" href="https://loja.uiclap.com/titulo/ua211577" target="_blank" rel="noopener">Livro físico (Uiclap)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="conteudos">
+    <div class="wrap">
+      <div class="titulo-sec">
+        <p class="eyebrow">Conteúdos</p>
+        <h2>Para ler, refletir <span class="ouro">e compartilhar</span></h2>
+        <div class="divisor"></div>
+        <p>Novos posts toda semana no Instagram. Escolha um tema e comece por ele.</p>
+      </div>
+      <div class="cards">
+        <a class="card" href="https://www.instagram.com/felipemarques.conselheiro" target="_blank" rel="noopener">
+          <span class="tag">Dependência emocional</span>
+          <h3>Você é viciado em alívio?</h3>
+          <p>A ligação entre dor emocional, trauma e a busca por qualquer coisa que anestesie.</p>
+          <span class="ver">Ver no Instagram →</span>
+        </a>
+        <a class="card" href="https://www.instagram.com/felipemarques.conselheiro" target="_blank" rel="noopener">
+          <span class="tag">Codependência</span>
+          <h3>Quebrar padrões sem se abandonar</h3>
+          <p>Por que repetimos os mesmos relacionamentos e como começar a mudar.</p>
+          <span class="ver">Ver no Instagram →</span>
+        </a>
+        <a class="card" href="https://www.instagram.com/felipemarques.conselheiro" target="_blank" rel="noopener">
+          <span class="tag">Trauma</span>
+          <h3>Trauma não é só coisa grande</h3>
+          <p>Feridas pequenas e repetidas também moldam a vida adulta.</p>
+          <span class="ver">Ver no Instagram →</span>
+        </a>
+        <a class="card" href="https://www.instagram.com/felipemarques.conselheiro" target="_blank" rel="noopener">
+          <span class="tag">Recuperação</span>
+          <h3>Um dia de cada vez</h3>
+          <p>Rotina, disciplina e pequenas conquistas na prática.</p>
+          <span class="ver">Ver no Instagram →</span>
+        </a>
+      </div>
+      <div class="centro"><a class="btn btn-verde" href="https://www.instagram.com/felipemarques.conselheiro" target="_blank" rel="noopener">Ver todos os conteúdos</a></div>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <div class="wrap sobre-grid">
+      <div>
+        <p class="eyebrow">Sobre</p>
+        <h2>Felipe <span class="ouro">Marques</span></h2>
+        <p>Conselheiro em Dependência Química e autor de <i>Para Além do Vício</i>. Atua há anos ao lado de pessoas e famílias que convivem com a dependência, unindo experiência de vida e formação técnica.</p>
+        <p>O objetivo é simples: informar sem julgar, acolher quem precisa e mostrar que recomeçar é possível.</p>
+      </div>
+      <ul class="creds">
+        <li><b>Conselheiro em Dependência Química</b><span>Registro CRT-HB 6045/26 (FEBRAHT) · CBO 5153-15</span></li>
+        <li><b>Pós-graduação em Saúde Mental</b><span>Ênfase em Dependência Química (em conclusão)</span></li>
+        <li><b>Gestão de Recursos Humanos</b><span>Universidade Estácio de Sá</span></li>
+        <li><b>Autor</b><span>Para Além do Vício, e-book e livro físico</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="titulo-sec">
+        <p class="eyebrow">Como posso ajudar</p>
+        <h2>Atendimento <span class="ouro">e palestras</span></h2>
+        <div class="divisor"></div>
+      </div>
+      <div class="servicos">
+        <div class="serv"><h3>Acolhimento</h3><p>Uma primeira conversa para você ou para quem você ama entender o momento e os próximos passos.</p></div>
+        <div class="serv"><h3>Aconselhamento</h3><p>Acompanhamento em dependência química e emocional, presencial em Macaé ou online.</p></div>
+        <div class="serv"><h3>Consultoria</h3><p>Orientação para famílias e instituições que lidam com a dependência.</p></div>
+        <div class="serv"><h3>Palestras</h3><p>SIPAT e eventos em empresas sobre prevenção, saúde mental e dependência.</p></div>
+      </div>
+      <p class="idiomas">Fala-se inglês · English spoken</p>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <div class="wrap">
+      <div class="moldura">
+        <svg class="lotus" viewBox="0 0 120 70" style="width:80px;display:block;margin:0 auto 16px"><use href="#lotus"/></svg>
+        <h2>Precisa de ajuda <span class="ouro">ou conhece alguém?</span></h2>
+        <div class="divisor"></div>
+        <p>Dar o primeiro passo é o mais difícil. Mande uma mensagem, a conversa é sigilosa e sem julgamento.</p>
+        <div class="acoes">
+          <a class="btn btn-verde" href="https://wa.me/5522999718302?text=Ol%C3%A1%20Felipe%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">WhatsApp (22) 99971-8302</a>
+          <a class="btn btn-linha" href="https://www.instagram.com/felipemarques.conselheiro" target="_blank" rel="noopener">@felipemarques.conselheiro</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Felipe Marques</b>
+    <span>Conselheiro em Dependência Química | @felipemarques.conselheiro</span>
+    <small>Os conteúdos deste site são informativos e não substituem atendimento médico ou psicológico. Em emergência, ligue 192 (SAMU) ou 188 (CVV).</small>
+  </div>
+</footer>
+
+</body>
+</html>
